@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #5372f0;
+}
+.wrap{
+    width: 605px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+}
+.wrap h1{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.wrap .content{
+    margin: 35px 0;
+}
+.wrap .area{
+    display: flex;
+    justify-content: center;
+}
+.area i{
+    font-size: 15px;
+}
+.area i:first-child{
+    margin: 3px 10px 0 0;
+}
+.area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin:0 0 3px 10px;
+}
+.area .quote{
+    font-size: 22px;
+    text-align: center;
+   
+}
+.content .author{
+    display: flex;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+.wrap .button{
+border-top: 1px solid #ccc;
+}
+.button .feature{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.feature ul{
+    display: flex;
+}
+.feature ul li{
+    list-style: none;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    color: #5372f0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #5372f0;
+    cursor:pointer ;
+    transition: all 0.3s ease;
+}
+.feature ul li:hover{
+    color: #ffffff;
+    background-color: #5372f0;
+    }
+
+ .feature ul .copy:active{
+        background-color: rgb(90, 17, 225);
+    }
+.feature ul .copy:before{
+    content: "Copied";
+    position: absolute;
+    top: 500px;
+    right: 0 px;
+    color: #fff;
+    background-color: #5372f0;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    display: none;
+}
+.feature ul .copy:after{
+    content:"";
+    position: absolute;
+    top: 250px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background-color: #5372f0;
+    transform: rotate(45deg);
+    display: none;
+}
+.feature ul.active .copy:before,
+.feature ul.active .copy:after{
+    display: block;
+}
+
+.feature button{
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 13px 22px;
+    border-radius: 30px;
+    background-color: #5372f0;
+}
+.feature button:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+button .loading{
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+
